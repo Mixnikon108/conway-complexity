@@ -2,6 +2,8 @@
 
 This project simulates Conway's Game of Life, a cellular automaton devised by mathematician John Conway. The simulation includes a visualization of the grid's evolution over time and plots the second order changes to analyze the dynamics of the system.
 
+![Conway's Game of Life Simulation](example.png)
+
 ## Overview
 
 Conway's Game of Life consists of a grid of cells that evolve through discrete time steps according to a set of rules based on the states of neighboring cells. Each cell can be in one of two states: alive (1) or dead (0).
