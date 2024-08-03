@@ -18,15 +18,11 @@ This simulation analyzes the complexity of the grid's evolution by calculating t
 
 - **First Order Changes**: This matrix is calculated as the absolute difference between the grid's state at time `t` and the state at time `t + 1`. It indicates cells that have changed their state in the next step.
 
-  \[
-  \text{First Order Changes} = | \text{State}_{t+1} - \text{State}_{t} |
-  \]
+  **First Order Changes** = | State at `t+1` - State at `t` |
 
 - **Second Order Changes**: This matrix is derived from the first order changes. It represents the changes in the first order changes themselves from one step to the next.
 
-  \[
-  \text{Second Order Changes} = | \text{First Order Changes}_{t+1} - \text{First Order Changes}_{t} |
-  \]
+  **Second Order Changes** = | First Order Changes at `t+1` - First Order Changes at `t` |
 
   The second order changes give insight into the dynamics and complexity of the evolving pattern, highlighting areas of rapid change or stabilization.
 
@@ -42,3 +38,45 @@ You can install the required packages using pip:
 
 ```bash
 pip install numpy matplotlib scipy
+```
+
+## Usage
+
+The main function in the script is `simulate_conway`, which runs the simulation. You can customize the simulation parameters such as grid size, number of frames, and animation speed.
+
+### Example
+
+```python
+simulate_conway(size=(100, 100), frames=2000, speed=1000.0)
+```
+
+- **`size`**: Tuple specifying the dimensions of the grid.
+- **`frames`**: Number of frames to simulate.
+- **`speed`**: Speed of the animation in frames per second.
+
+### Visualizations
+
+- The top plot displays the grid, showing live cells as black squares.
+- The bottom plot shows the logarithm of the second order changes over time, illustrating the dynamic complexity of the system.
+
+## Contact
+
+For questions or collaboration, please reach out:
+
+- **Email**: [j.dpadron@alumnos.upm.es](mailto:j.dpadron@alumnos.upm.es)
+- **Twitter**: [@mixnikon](https://twitter.com/mixnikon)
+
+## Additional Information
+
+For more information and related projects, please visit the GitHub repository: [conway-complexity](https://github.com/Mixnikon108/conway-complexity).
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+
+### Key Updates
+- **Removed LaTeX**: Changed mathematical expressions to plain text for compatibility with GitHub's Markdown.
+- **Contact and Links**: Updated contact information and added a link to the GitHub repository.
+
+This version should display correctly on GitHub, providing clear instructions and explanations without the use of unsupported syntax.
