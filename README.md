@@ -92,11 +92,4 @@ For more information and related projects, please visit the GitHub repository: [
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-
-### Key Updates
-- **Removed LaTeX**: Changed mathematical expressions to plain text for compatibility with GitHub's Markdown.
-- **Contact and Links**: Updated contact information and added a link to the GitHub repository.
-
-This version should display correctly on GitHub, providing clear instructions and explanations without the use of unsupported syntax.
+This project is licensed under the Apache License. See the [LICENSE](LICENSE) file for details.
