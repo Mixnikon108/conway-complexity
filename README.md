@@ -26,7 +26,7 @@ This simulation analyzes the complexity of the grid's evolution by calculating t
 
   **Second Order Changes** = | First Order Changes at `t+1` - First Order Changes at `t` |
 
-  The second order changes give insight into the dynamics and complexity of the evolving pattern, highlighting areas of rapid change or stabilization.
+  The second order changes give insight into the dynamics and complexity of the evolving pattern, highlighting areas of rapid change or stabilization. If the graph drops to zero, it means the simulation has reached a converged state. Some times, more complex repetitive patters arise despite the blinker, so the graph will reach a constant oscilatory state rather droping to zero.
 
 ## Installation
 
