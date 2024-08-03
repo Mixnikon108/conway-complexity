@@ -30,10 +30,8 @@ The algorithm's performance was benchmarked against a straightforward implementa
 
 ![Performance Comparison](image.png)
 
-- **Image Explanation**: The image above illustrates the computation time required to update grids of various sizes over different numbers of epochs. The vectorized approach scales much better than the naive implementation as the grid size increases.
-
-- **Testing and Validation**: This algorithm has been tested against the straightforward implementation to ensure correctness. The results are consistent across both methods, validating the efficiency of the numpy-based approach.
-
+- **Image Explanation**: The image above illustrates the computation time required to update grids of various sizes over different numbers of iterations for different matrix sizes.
+  
 ## First Order and Second Order Changes
 
 This simulation analyzes the complexity of the grid's evolution by calculating the first and second order changes:
