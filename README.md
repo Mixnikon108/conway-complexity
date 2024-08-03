@@ -14,6 +14,26 @@ Conway's Game of Life consists of a grid of cells that evolve through discrete t
 2. **Survival**: A live cell with two or three live neighbors remains alive.
 3. **Death**: In all other cases, a cell dies or remains dead.
 
+## Algorithm Description
+
+The update algorithm for the Game of Life simulation is implemented using the efficient computational capabilities of numpy. By leveraging numpy's vectorized operations, we can update the entire grid in a highly efficient manner, avoiding the need for explicit loops over each cell. This approach significantly enhances the performance, especially for large grids.
+
+### Update Mechanism
+
+1. **Neighborhood Counting**: The algorithm uses a convolution operation to calculate the number of live neighbors for each cell. This is achieved using a kernel that sums up the surrounding cells' states.
+
+2. **State Update**: Based on the number of live neighbors and the current state, the grid is updated according to the rules of Conway's Game of Life. This is done using numpy's vectorized operations, which allows for simultaneous computation across the entire grid.
+
+### Performance Comparison
+
+The algorithm's performance was benchmarked against a straightforward implementation that uses explicit loops to check and update each cell individually. The numpy-based vectorized approach showed significant improvements in computation time.
+
+![Performance Comparison](image.png)
+
+- **Image Explanation**: The image above illustrates the computation time required to update grids of various sizes over different numbers of epochs. The vectorized approach scales much better than the naive implementation as the grid size increases.
+
+- **Testing and Validation**: This algorithm has been tested against the straightforward implementation to ensure correctness. The results are consistent across both methods, validating the efficiency of the numpy-based approach.
+
 ## First Order and Second Order Changes
 
 This simulation analyzes the complexity of the grid's evolution by calculating the first and second order changes:
